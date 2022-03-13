@@ -1,0 +1,2 @@
+CREATE DATABASE RestoDB;
+USE RestoDB;

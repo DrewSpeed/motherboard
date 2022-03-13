@@ -1,0 +1,36 @@
+body {
+    background-color: #DDBEA9;
+}
+
+div {
+    background-color: #DDBEA9;
+}
+
+.display-4 {
+    font-family: 'Pacifico', cursive;
+    color: #997B66;
+}
+
+.navbar {
+    background-color: #DDBEA9;
+}
+.btn {
+    background-color: #9B9B7A;
+    border-color: #797D62;
+}
+
+.btn:hover {
+    background-color: #797D62;
+    border-color: #9B9B7a;
+}
+
+.card {
+    background-color: #FFE8D6;
+    border-color: #997B66;
+}
+
+.card-header {
+    color: #997B66;
+    background-color: #DDBEA9;
+    font-family: 'Pacifico', cursive;
+}
