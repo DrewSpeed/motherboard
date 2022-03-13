@@ -18,9 +18,9 @@ namespace Motherboard.DataAccess
         }
         public Restaurant AddRestaurant(Restaurant restaurantToAdd)
         {
-            var sql = @$"insert into Restaurant(RestaurantId, Address, [Name], [Url], [Hours], PhoneNumber, AverageCostForTwo, ThumbNail, DateAdded)
-                        output inserted.*
-                        values(@RestaurantId, @Address, @Name, @Url, @Hours, @PhoneNumber, @AverageCostForTwo, @ThumbNail, '{DateTime.Now}')";
+            var sql = @$"insert into [RestaurantId], [Address], [Name], [Hours], [Healthscore], [WheelchairAccessible], [OutdoorSeating], [GoodForGroups], [HighChair], [GenderNeutralRestroom], [KidsMenu], [Price], [Park]
+                        output inserted *
+                        values(@RestaurantId, @Address, @Name, @Hours, @Healthscore, @WheelchairAccessible, @OutdoorSeating, @GoodForGroups, @HighChair, @GenderNeutralRestroom, @KidsMenu, @Price, @Park)";
 
             using (var db = new SqlConnection(ConnectionString))
             {
